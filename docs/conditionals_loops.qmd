@@ -1,0 +1,111 @@
+---
+title: "conditionals_loops"
+format: html
+editor_options: 
+  chunk_output_type: console
+---
+
+## TASK ONE ----
+```{r}
+pm2_5 <- 48
+
+if(pm2_5 < 100){
+  print("Low to moderate risk")
+}else if(pm2_5== 100){
+  print("Unhealthy for sensitive groups")
+  }else if(pm2_5 >= 150){
+  print("Health risk present")  
+  } 
+
+pm2_5 <- 200
+
+if(pm2_5 < 100){
+  print("Low to moderate risk")
+}else if(pm2_5== 100){
+  print("Unhealthy for sensitive groups")
+  }else if(pm2_5 >= 150){
+  print("Health risk present")  
+  } 
+
+```
+
+##TASK TWO ----
+```{r}
+library(tidyverse)
+library(stringr)
+
+species <- c("blue_whale", "dolphin", "fish")
+
+
+       
+if (any(grepl("whale",species))) {
+  print("you found a whale!")
+} else ('')
+
+```
+
+
+
+##TASK THREE ---- *** come back to this
+```{r}
+base_burrito <- 6.5
+main_ingredient <- c("veggie", "chicken", "steak")
+burrito_cost <- c(6.5, 9.5, 10)
+
+for (i in seq_along(main_ingredient)) {
+  if (main_ingredient[i] == "veggie") {
+  veggie_cost <- base_burrito[i] 
+} else if (main_ingredient[i] == "chicken"){
+  chicken_cost <- base_burrito[i] + 3
+} else if (main_ingredient[i] == "steak") {
+  steak_cost<- base_burrito[i] + 3.25
+}  
+  
+}  
+  print(veggie_cost)
+  print(steak_cost)
+
+
+
+
+```
+
+
+
+##TASK FOUR ----
+
+```{r}
+rm(list=ls())
+fish_count <- c("goldfish", "tetras", "guppies", "mollies")
+#fishes_count <- vector(mode = "numeric", length = length(fish_count))
+fish <- c(8, 10, 12, 23)
+
+for (i in seq_along(fish_count)) {
+  if (fish_count[i] == "goldfish") {
+  fishes_count <- fish[i]/sum(fish)
+} else if (fish_count[i] == "tetras"){
+  fishes_count <- fish[i]/ sum(fish)
+} else if (fish_count[i] == "guppies") {
+  fishes_count <- fish[i]/ sum(fish)
+} else if (fish_count[i] == "mollies") {
+  fishes_count <- fish[i]/ sum(fish)
+}
+  fishes_count[i] <- fish[i]/ sum(fish)
+}
+   print(fishes_count)
+
+ for(i in seq_along(fish_count)){
+   new_value <- fiss_count[i]/sum(fish)
+   fish_prop[i] <- new_value
+   print(fish_prop)
+   }
+
+
+```
+
+
+## TASK FIVE ----
+```{r}
+
+```
+
